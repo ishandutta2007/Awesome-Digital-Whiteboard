@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#311042"/>
+    </linearGradient>
+
+    <!-- Grid Pattern for Digital Whiteboard Vibe -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+      <circle cx="40" cy="40" r="1.5" fill="#ffffff" fill-opacity="0.15"/>
+    </pattern>
+
+    <!-- Text Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Linear Gradient for Accents -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .title {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 900;
+      font-size: 56px;
+      fill: #ffffff;
+      letter-spacing: -1px;
+    }
+    .subtitle {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      font-size: 22px;
+      fill: #cbd5e1;
+    }
+    .pill-text {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      fill: #e2e8f0;
+    }
+    
+    /* Keyframe Animations for Dynamic Aspect */
+    @keyframes float1 {
+      0% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-12px) rotate(1deg); }
+      100% { transform: translateY(0px) rotate(0deg); }
+    }
+    @keyframes float2 {
+      0% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(10px) rotate(-1deg); }
+      100% { transform: translateY(0px) rotate(0deg); }
+    }
+    @keyframes pulseGlow {
+      0% { opacity: 0.3; transform: scale(0.98); }
+      50% { opacity: 0.6; transform: scale(1.02); }
+      100% { opacity: 0.3; transform: scale(0.98); }
+    }
+    @keyframes strokeDash {
+      0% { stroke-dashoffset: 400; }
+      100% { stroke-dashoffset: 0; }
+    }
+
+    .floating-bg-1 { animation: float1 8s ease-in-out infinite; transform-origin: center; }
+    .floating-bg-2 { animation: float2 10s ease-in-out infinite; transform-origin: center; }
+    .pulse-glow { animation: pulseGlow 6s ease-in-out infinite; transform-origin: center; }
+    .drawing-path {
+      stroke-dasharray: 400;
+      animation: strokeDash 5s ease-in-out infinite alternate;
+    }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1200" height="340" fill="url(#bgGrad)" rx="16"/>
+  <rect width="1200" height="340" fill="url(#grid)" rx="16"/>
+
+  <!-- Dynamic Glowing Orbs (BACKGROUND ONLY) -->
+  <circle cx="150" cy="80" r="140" fill="#6366f1" opacity="0.25" class="pulse-glow" filter="blur(40px)"/>
+  <circle cx="1050" cy="260" r="160" fill="#ec4899" opacity="0.2" class="pulse-glow" filter="blur(50px)"/>
+  <circle cx="900" cy="70" r="100" fill="#8b5cf6" opacity="0.2" class="pulse-glow" filter="blur(35px)"/>
+
+  <!-- Background Animated Whiteboard Sketches (Non-obstructive) -->
+  <g class="floating-bg-1" opacity="0.35">
+    <!-- Handdrawn Sticky Note Floating Right -->
+    <rect x="980" y="45" width="140" height="130" rx="8" fill="#fef08a" transform="rotate(6 1050 110)"/>
+    <path d="M 1000 75 L 1090 75 M 1000 100 L 1070 100 M 1000 125 L 1050 125" stroke="#854d0e" stroke-width="3" stroke-linecap="round" transform="rotate(6 1050 110)"/>
+  </g>
+
+  <g class="floating-bg-2" opacity="0.3">
+    <!-- Handdrawn Sticky Note Floating Left -->
+    <rect x="70" y="160" width="130" height="120" rx="8" fill="#a7f3d0" transform="rotate(-8 135 220)"/>
+    <path d="M 90 190 L 170 190 M 90 215 L 150 215 M 90 240 L 165 240" stroke="#065f46" stroke-width="3" stroke-linecap="round" transform="rotate(-8 135 220)"/>
+  </g>
+
+  <!-- Animated Connection Line -->
+  <path d="M 220 270 Q 400 310 600 270 T 980 270" fill="none" stroke="url(#accentGrad)" stroke-width="3" stroke-linecap="round" class="drawing-path" opacity="0.4"/>
+
+  <!-- FOREGROUND CONTENT CONTAINER (Centered & Clean) -->
+  <g transform="translate(600, 145)" text-anchor="middle">
+    <!-- Main Title with Soft Glow -->
+    <text y="0" class="title" filter="url(#glow)">Awesome Digital Whiteboard 🎨✨</text>
+    
+    <!-- Subtitle -->
+    <text y="46" class="subtitle">Curated Infinite Canvas &amp; Visual Collaboration Tools • SaaS &amp; Open-Source</text>
+
+    <!-- Interactive / Feature Pills Bar -->
+    <g transform="translate(0, 85)">
+      <!-- Pill 1: Infinite Canvas -->
+      <g transform="translate(-360, 0)">
+        <rect x="-80" y="-18" width="160" height="36" rx="18" fill="url(#cardGrad)" stroke="#6366f1" stroke-width="1.5"/>
+        <text y="5" text-anchor="middle" class="pill-text">♾️ Infinite Canvas</text>
+      </g>
+
+      <!-- Pill 2: Open Source & Self Hosted -->
+      <g transform="translate(-180, 0)">
+        <rect x="-85" y="-18" width="170" height="36" rx="18" fill="url(#cardGrad)" stroke="#a855f7" stroke-width="1.5"/>
+        <text y="5" text-anchor="middle" class="pill-text">🔓 Open-Source &amp; Self-Host</text>
+      </g>
+
+      <!-- Pill 3: Enterprise SaaS -->
+      <g transform="translate(10, 0)">
+        <rect x="-75" y="-18" width="150" height="36" rx="18" fill="url(#cardGrad)" stroke="#ec4899" stroke-width="1.5"/>
+        <text y="5" text-anchor="middle" class="pill-text">💼 Enterprise SaaS</text>
+      </g>
+
+      <!-- Pill 4: AI & Diagrams -->
+      <g transform="translate(190, 0)">
+        <rect x="-85" y="-18" width="170" height="36" rx="18" fill="url(#cardGrad)" stroke="#10b981" stroke-width="1.5"/>
+        <text y="5" text-anchor="middle" class="pill-text">🤖 AI &amp; Visual Diagrams</text>
+      </g>
+
+      <!-- Pill 5: Real-time Collab -->
+      <g transform="translate(370, 0)">
+        <rect x="-75" y="-18" width="150" height="36" rx="18" fill="url(#cardGrad)" stroke="#f59e0b" stroke-width="1.5"/>
+        <text y="5" text-anchor="middle" class="pill-text">⚡ Real-Time Collab</text>
+      </g>
+    </g>
+  </g>
+</svg>

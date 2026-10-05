@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Digital-Whiteboard/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Digital-Whiteboard?style=flat-square" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Digital-Whiteboard/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Digital-Whiteboard?style=flat-square" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Digital-Whiteboard/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Digital-Whiteboard?style=flat-square" alt="GitHub Forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Digital-Whiteboard/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Digital-Whiteboard?style=flat-square" alt="License"/></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -61,9 +61,9 @@ This repository tracks top **SaaS platforms** and **open-source projects** for *
 
 The open-source whiteboard ecosystem is exceptionally mature, offering production-grade infinite canvas engines, self-hostable privacy-first tools, and developer SDKs.
 
-*Projects are sorted by GitHub Star Count (Descending).* ⭐️
+*Projects are sorted by GitHub Stars_Count (Descending).* ⭐️
 
-| Repo | Description | License | Star Count |
+| Repo | Description | License | Stars_Count |
 |------|-------------|---------|------------|
 | **[Excalidraw](https://github.com/excalidraw/excalidraw)** ✏️ | Virtual hand-drawn style whiteboard with end-to-end encryption. Features infinite canvas, dark mode, shape libraries, PNG/SVG export, local-first autosave, and Docker self-hosting support. | MIT | [![Stars](https://img.shields.io/github/stars/excalidraw/excalidraw?style=social&color=white)](https://github.com/excalidraw/excalidraw/stargazers) |
 | **[AFFiNE](https://github.com/toeverything/AFFiNE)** 📑 | Next-generation all-in-one workspace combining docs, whiteboards, and database tables into a single infinite canvas. | MIT | [![Stars](https://img.shields.io/github/stars/toeverything/AFFiNE?style=social&color=white)](https://github.com/toeverything/AFFiNE/stargazers) |
@@ -84,7 +84,7 @@ Contributions are welcome! Please follow these steps to add or update entries: �
 
 1. **Fork** this repository.
 2. Add your project or SaaS product to `README.md` following the existing markdown table layout.
-3. Ensure exact pricing starting tiers, free limits, company sizes, or GitHub star badges are verified.
+3. Ensure exact pricing starting tiers, free limits, company sizes, or GitHub Stars_Badges are verified.
 4. Open a **Pull Request** with a brief summary of the changes.
 
 ---

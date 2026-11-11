@@ -1,3 +1,4 @@
+
 # Awesome Digital Whiteboard 🎨✨
 
 <p align="center">
@@ -44,6 +45,7 @@ This repository tracks top **SaaS platforms** and **open-source projects** for *
 
 | Platform | Description | Pricing (Starting Tier) | Free Tier Limits | Company Size / Valuation |
 |----------|-------------|------------------------|------------------|--------------------------|
+| **[Novastart](https://novastart.com/)** | Infinite canvas for apps, shared canvases, and AI agents. | Pro $10/month; Team $20/month per user. | Free plan available; see website for limits. | Bootstrapped LLC; team 2-10; Los Angeles; founded January 2025. |
 | **[Microsoft Whiteboard](https://www.microsoft.com/en-us/microsoft-365/microsoft-whiteboard/digital-whiteboard-app)** 🏢 | Collaborative canvas for Microsoft 365. Ink, sticky notes, shapes, images, and meeting templates. | **$6.00/user/month** (included in Microsoft 365 Business Basic annual commitment) | **Free tier available for any personal Microsoft Account** with unlimited personal boards & basic sharing. | **~$281B Annual Revenue** (Microsoft Corp NASDAQ: MSFT FY2025) |
 | **[Miro](https://miro.com/)** 🟡 | Category-defining visual collaboration platform. Infinite canvas, advanced templates, AI tools, and 130+ integrations. | **$8.00/member/month** (billed annually) or **$10.00/member/month** (billed monthly) | **Free Forever**: 3 editable boards, unlimited team members, premade templates, 10 Miro AI credits/month. | **~$17.5B Valuation** (Private, $400M Series C) |
 | **[FigJam](https://www.figma.com/figjam/)** 🎨 | Figma's collaborative whiteboard. Seamless design-to-whiteboard integration, widgets, and AI features. | **$3.00/collaborator seat/month** (billed annually) or **$5.00/month** (monthly) | **Starter Free Plan**: 3 active Figma/FigJam files, unlimited drafts, 150 AI credits/day, unlimited collaborators. | **~$12.5B Valuation** (Figma Private Valuation / Tender Offer) |
